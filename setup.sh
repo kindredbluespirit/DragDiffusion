@@ -7,4 +7,5 @@ pixi init --import environment.yaml
 ## search "gradio error before function returns"
 ## Error if output takes more than 5 seconds to generate
 ## https://github.com/gradio-app/gradio/issues/3078
+## https://github.com/gradio-app/gradio/issues/5143
 sh fix_timeout_bug.sh
