@@ -13,7 +13,7 @@ fi
 cp "$config_path" "${config_path}.bak"
 
 # Modify the file
-sed -i "s/DEFAULT_TIMEOUT_CONFIG = Timeout(timeout=5.0)/DEFAULT_TIMEOUT_CONFIG = Timeout(timeout=60)/" "$config_path"
+sed -i "s/DEFAULT_TIMEOUT_CONFIG = Timeout(timeout=5.0)/DEFAULT_TIMEOUT_CONFIG = Timeout(timeout=1000)/" "$config_path"
 
 # Check if the modification was successful
 if grep -q "DEFAULT_TIMEOUT_CONFIG = Timeout(timeout=60)" "$config_path"; then
