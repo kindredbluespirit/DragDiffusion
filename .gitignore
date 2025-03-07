@@ -8,3 +8,5 @@ __pycache__/
 lora_tmp/
 results/
 utils/__pycache__/
+
+ignore/
